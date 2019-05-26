@@ -332,6 +332,7 @@ message TensorProto {
     BFLOAT16 = 16;
 
     // Future extensions go here.
+    EVENT = 17;
   }
 
   // The shape of the tensor.

@@ -533,6 +533,14 @@ class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, IsInf);
 class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, NonMaxSuppression);
 class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, ReverseSequence);
 class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, RoiAlign);
+//
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LIFCell);
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LIFLayer);
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LSNNCell);
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LSNNLayer);
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, ADEXCell);
+class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, ADEXLayer);
+// class ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, OnHICANN);
 
 // Iterate over schema from ai.onnx version 10
 class OpSet_Onnx_ver10 {
@@ -569,6 +577,14 @@ class OpSet_Onnx_ver10 {
     fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(
            Onnx, 10, ReverseSequence)>());
     fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, RoiAlign)>());
+
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LIFCell)>());
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LIFLayer)>());
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LSNNCell)>());
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, LSNNLayer)>());
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, ADEXCell)>());
+    fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, ADEXLayer)>());
+    // fn(GetOpSchema<ONNX_OPERATOR_SET_SCHEMA_CLASS_NAME(Onnx, 10, OnHICANN)>());
   }
 };
 
